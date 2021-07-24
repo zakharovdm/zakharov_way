@@ -3,12 +3,67 @@
   <head>
     <meta charset="utf-8">
     <title>Way. Путешествия по Европе.</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page-body">
-    <main>
-      <header class="header">
-
-      </header>
+    <header class="site-header container">
+      <a class="site-header__logo">
+        <img class="site-header__logo-img" src="img/logo.svg" width="57" height="22" alt="">
+      </a>
+      <div class="site-header__inner">
+        <nav class="site-nav site-nav--closed site-nav--nojs">
+          <button class="site-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#travel">О путешествии</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="#prices">Цены</a>
+            </li>
+          </ul>
+        </nav>
+          <a class="site-header__number" href="tel:+749978468446">
+          <svg class="site-header__phone-icon" width="21" height="24">
+              <use xlink:href="img/sprite.svg#icon-phone"></use>
+          </svg>
+          +7 (499) -784-684-46</a>
+        </div>
+    </header>
+    <main class="site-main">
     </main>
+    <footer class="site-footer">
+      <section class="site-footer__travels next-travels">
+        <h2 class="site-footer__title">Следующие путешествия</h2>
+        <ul class="next-travels__list">
+           <li class="next-travels__item">Марсель</li>
+           <li class="next-travels__item">Ним</li>
+           <li class="next-travels__item">Монпелье</li>
+           <li class="next-travels__item">Барселона</li>
+           <li class="next-travels__item">Пальма</li>
+           <li class="next-travels__item"></li>
+           <li class="next-travels__item"></li>
+           <li class="next-travels__item"></li>
+           <li class="next-travels__item"></li>
+           <li class="next-travels__item"></li>
+           <li class="next-travels__item"></li>
+           <li class="next-travels__item"></li>
+           <li class="next-travels__item"></li>
+           <li class="next-travels__item"></li>
+           <li class="next-travels__item"></li>
+         </ul>
+      </section>
+
+      <section class="site-footer__contacts">
+        <h2 class="site-footer__title">Наши контакты</h2>
+      </section>
+
+      <section class="site-footer__corporate">
+        <h2 class="site-footer__title">Корпоративные путешествия</h2>
+      </section>
+    </footer>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

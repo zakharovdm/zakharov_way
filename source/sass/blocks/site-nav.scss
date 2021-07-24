@@ -1,0 +1,144 @@
+.site-nav__toggle {
+  display: none;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.site-nav {
+  justify-self: end;
+
+  padding: 6px 0 0;
+
+  @media (max-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    width: 320px;
+    padding: 134px 0 254px;
+
+    &--closed .site-nav__list {
+      display: none;
+    }
+
+    &--closed .site-nav__toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 72px;
+      height: 50px;
+
+      background-color: $red;
+      border: 0;
+    }
+
+    &--closed .site-nav__toggle::before {
+      content: "";
+      position: absolute;
+      top: 17px;
+      right: 23px;
+
+      width: 24px;
+      height: 14px;
+
+      background: url("../img/burger.svg") no-repeat;
+    }
+
+    &--opened .site-nav__toggle {
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      display: block;
+      width: 50px;
+      height: 52px;
+
+      background-color: transparent;
+      border: 0;
+    }
+
+    &--opened .site-nav__toggle::before {
+      content: "";
+      position: absolute;
+      top: 17px;
+      right: 23px;
+
+      width: 24px;
+      height: 25px;
+
+      background: url("../img/close.svg") no-repeat;
+    }
+
+    &--nojs .site-nav__toggle {
+      display: none;
+    }
+
+    &--nojs .site-nav__list {
+      display: grid;
+    }
+  }
+}
+
+.site-nav__list {
+  @include reset-list;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.site-nav__item {
+  margin-right: 40px;
+  margin-bottom: 5px;
+
+  &:last-child {
+    margin-right: auto;
+  }
+
+  @media (max-width: $desktop-width) {
+    position: relative;
+    width: 320px;
+    margin-bottom: 30px;
+    margin-right: auto;
+
+    background-color: $light-grey;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 23px;
+      right: 25px;
+
+      width: 8px;
+      height: 12px;
+
+      background: url("../img/arrow.svg") no-repeat;;
+    }
+  }
+}
+
+.site-nav__link {
+  font-weight: 500;
+  color: $mostly-black;
+
+  &:hover,
+  &:focus {
+    color: $red;
+  }
+
+  &:active {
+    color: $active-red;
+  }
+
+  @media (max-width: $desktop-width) {
+    display: block;
+    padding: 16px 5px;
+
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+    color: $dark-grey;
+  }
+}
