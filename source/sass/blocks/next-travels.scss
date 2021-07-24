@@ -1,0 +1,41 @@
+.next-travels__list {
+  @include reset-list;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: column;
+  grid-row-gap: 10px;
+  grid-column-gap: 20px;
+
+  @media (max-width: $tablet-width) {
+    width: 240px;
+    margin: 0 auto;
+  }
+}
+
+.next-travels__item {
+  color: rgba($mostly-black, 0.5);
+
+  &--first-column {
+    grid-column: 1 / 2;
+  }
+
+  &--second-column {
+    grid-column: 2 / 3;
+  }
+
+  &--third-column {
+    grid-column: 3 / 4;
+  }
+
+  @media (max-width: $tablet-width) {
+    text-align: center;
+
+    &--second-column {
+      grid-column: 3 / 4;
+    }
+
+    &--third-column {
+      grid-column: 1 / -1;
+    }
+  }
+}

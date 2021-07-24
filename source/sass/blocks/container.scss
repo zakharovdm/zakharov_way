@@ -3,14 +3,22 @@
   margin: 0 auto;
   padding: 0 10px;
 
-  @media(max-width: $desktop-width) {
+  &--footer {
+    width: 1139px;
+  }
+
+  @media (max-width: $desktop-width) {
     width: 728px;
     margin: 0;
     padding: 0 20px;
+
+    &--footer {
+      margin: 0 auto;
+    }
   }
 
-  @media(max-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
     width: 280px;
-    padding: 0 20px
+    padding: 0 20px;
   }
 }
