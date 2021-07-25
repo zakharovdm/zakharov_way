@@ -1,5 +1,5 @@
-const siteNav = document.querySelector('.site-nav');
-const navToggle = siteNav.querySelector('.site-nav__toggle');
+const siteNav = document.querySelector(".site-nav");
+const navToggle = siteNav.querySelector(".site-nav__toggle");
 
 // Menu
 

@@ -1,0 +1,155 @@
+.promo {
+  background-color: $blue;
+
+  @media (max-width: $tablet-width) {
+    height: 235px;
+    margin-bottom: 235px;
+  }
+}
+
+.promo__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin: 0 auto;
+  padding: 185px 0 290px;
+  background: url("../img/background-promo-desktop.jpg") no-repeat 50%;
+  background-size: cover;
+
+  @media (max-width: $desktop-width) {
+    display: block;
+    padding: 60px 0 78px;
+    background: url("../img/background-promo-tablet.jpg") no-repeat 50%;
+    background-size: cover;
+  }
+
+  @media (max-width: $tablet-width) {
+    background: url("../img/background-promo-mobile.jpg") no-repeat 50% 0;
+    background-size: cover;
+    padding-top: 80px;
+    padding-bottom: 0;
+    height: 155px;
+  }
+}
+
+.promo__inner {
+  grid-column: 2 / -1;
+  padding-left: 135px;
+
+  @media (max-width: $desktop-width) {
+    display: grid;
+    justify-content: center;
+    padding-left: 12px;
+  }
+
+  @media (max-width: $tablet-width) {
+    padding-left: 0;
+  }
+}
+
+.promo__title {
+  width: 412px;
+  margin: 0 0 30px;
+
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 80px;
+  color: $white;
+
+  @media (max-width: $desktop-width) {
+    margin: 0 0 15px;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 294px;
+    margin: 0 auto 120px;
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+.promo__text {
+  width: 376px;
+  margin: 0 0 39px;
+
+  font-size: 16px;
+  line-height: 27px;
+  color: $white;
+  letter-spacing: -0.466667px;
+
+  @media (max-width: $desktop-width) {
+    width: 417px;
+    margin: 0 0 15px;
+    text-align: center;
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 288px;
+    color: $dark-blue;
+    margin: 0 0 20px;
+  }
+}
+
+.promo__link {
+  position: relative;
+
+  display: block;
+  width: 295px;
+  padding: 30px 5px 30px 40px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  background-color: $red;
+
+  &:hover,
+  &:focus {
+    background-color: $orange;
+  }
+
+  &:active {
+    opacity: 70%;
+  }
+
+  @media (max-width: $desktop-width) {
+    justify-self: center;
+    width: 205px;
+    padding: 19px 5px 19px 40px;
+
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+
+    &:active {
+      background-color: $orange;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 243px;
+  }
+}
+
+.promo__icon-link {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+
+  stroke-width: 2px;
+  stroke: $white;
+  fill: none;
+
+  @media (max-width: $desktop-width) {
+    top: 15px;
+    right: 43px;
+
+    stroke-width: 1px;
+  }
+}

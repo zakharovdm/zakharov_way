@@ -1,13 +1,13 @@
 .site-header {
   display: grid;
   grid-template-columns: 150px 1fr;
-  padding-top: 37px;
-  padding-bottom: 39px;
+  padding-top: 34px;
+  padding-bottom: 34px;
 
   @media (max-width: $desktop-width) {
     display: block;
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 14px;
   }
 }
 
