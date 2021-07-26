@@ -1,9 +1,8 @@
 .promo {
-  background-color: $blue;
+  margin-bottom: 80px;
 
   @media (max-width: $tablet-width) {
-    height: 235px;
-    margin-bottom: 235px;
+   padding-bottom: 215px;
   }
 }
 
@@ -14,21 +13,24 @@
   margin: 0 auto;
   padding: 185px 0 290px;
   background: url("../img/background-promo-desktop.jpg") no-repeat 50%;
+  background-color: $blue;
   background-size: cover;
 
   @media (max-width: $desktop-width) {
     display: block;
     padding: 60px 0 78px;
     background: url("../img/background-promo-tablet.jpg") no-repeat 50%;
+    background-color: $blue;
     background-size: cover;
   }
 
   @media (max-width: $tablet-width) {
-    background: url("../img/background-promo-mobile.jpg") no-repeat 50% 0;
-    background-size: cover;
     padding-top: 80px;
     padding-bottom: 0;
     height: 155px;
+    background: url("../img/background-promo-mobile.jpg") no-repeat 50% 0;
+    background-color: $blue;
+    background-size: cover;
   }
 }
 
