@@ -1,0 +1,54 @@
+.button {
+  position: relative;
+
+  display: block;
+  width: 295px;
+  padding: 30px 5px 30px 40px;
+
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  color: $white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+
+  background-color: $red;
+
+  &:hover,
+  &:focus {
+    background-color: $orange;
+  }
+
+  &:active {
+    opacity: 70%;
+  }
+
+  &--buy {
+    width: 245px;
+    text-align: center;
+    padding-left: 5px;
+  }
+
+  @media (max-width: $desktop-width) {
+    justify-self: center;
+    width: 205px;
+    padding: 19px 5px 19px 40px;
+
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+
+    &:active {
+      background-color: $orange;
+    }
+
+    &--buy {
+      width: 240px;
+      padding-left: 5px;
+    }
+  }
+
+  @media (max-width: $tablet-width) {
+    width: 243px;
+  }
+}

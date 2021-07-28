@@ -1,3 +1,7 @@
+.places {
+  margin-bottom: 124px;
+}
+
 .places__list {
   @include reset-list;
   display: flex;
@@ -110,6 +114,7 @@
   text-transform: uppercase;
   color: $white;
   letter-spacing: 2px;
+  text-align: center;
 
   background-color: transparent;
   border: 1px solid rgba($white, 0.7);
@@ -118,7 +123,7 @@
 
 .places__country {
   position: absolute;
-  bottom: 6px;
+  bottom: 5px;
   left: 70px;
 
   display: block;
@@ -132,8 +137,8 @@
     display: none;
     content: "";
     position: absolute;
-    top: -370px;
-    right: -71px;
+    top: -368px;
+    right: -65px;
     width: 350px;
     height: 430px;
     background-color: rgba($mostly-black, 0.6);
@@ -157,6 +162,15 @@
   &:hover .places__country::before,
   &:focus .places__country::before {
     display: block;
+  }
+
+  @media (max-width: $desktop-width) {
+    &:hover .places__button,
+    &:focus .places__button,
+    &:hover .places__country::before,
+    &:focus .places__country::before {
+      display: none;
+    }
   }
 }
 

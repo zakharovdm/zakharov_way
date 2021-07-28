@@ -2,7 +2,7 @@
   margin-bottom: 80px;
 
   @media (max-width: $tablet-width) {
-   padding-bottom: 215px;
+    padding-bottom: 215px;
   }
 }
 
@@ -92,50 +92,6 @@
     width: 288px;
     color: $dark-blue;
     margin: 0 0 20px;
-  }
-}
-
-.promo__link {
-  position: relative;
-
-  display: block;
-  width: 295px;
-  padding: 30px 5px 30px 40px;
-
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 15px;
-  color: $white;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-
-  background-color: $red;
-
-  &:hover,
-  &:focus {
-    background-color: $orange;
-  }
-
-  &:active {
-    opacity: 70%;
-  }
-
-  @media (max-width: $desktop-width) {
-    justify-self: center;
-    width: 205px;
-    padding: 19px 5px 19px 40px;
-
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 12px;
-
-    &:active {
-      background-color: $orange;
-    }
-  }
-
-  @media (max-width: $tablet-width) {
-    width: 243px;
   }
 }
 

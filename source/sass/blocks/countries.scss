@@ -1,0 +1,65 @@
+.countries {
+  margin-bottom: 234px;
+}
+
+.countries__tabs {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 89px;
+  padding: 0 0 15px;
+  margin: 0 0 65px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 55px;
+
+    width: 899px;
+    border: 1px solid rgba($dark-blue, 0.3);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 112px;
+    right: -198px;
+    z-index: -1;
+
+    width: 1450px;
+    height: 1090px;
+
+    background: url("../img/map.svg") no-repeat;
+  }
+
+  @media (max-width: $desktop-width) {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    gap: 75px;
+
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.countries__tab {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.415px;
+  color: rgba($dark-blue, 0.3);
+
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:first-child {
+    margin-left: 46px;
+  }
+
+  &--active {
+    color: $red;
+  }
+}
